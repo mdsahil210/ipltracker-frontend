@@ -86,7 +86,7 @@ export const HeadToHeadPage = () => {
             if(selectedTeamsCount===2 && selectedTeamNames.firstSelectedTeam !== "" && selectedTeamNames.secondSelectedTeam !== "" && headToheadMatches.length === 0){ 
 
                 const fetchHeadToHeadMatches = async () => {
-                    const response = await fetch(`http://localhost:8080/head-to-head?team=${selectedTeamNames.firstSelectedTeam},${selectedTeamNames.secondSelectedTeam}`);
+                    const response = await fetch(`/head-to-head?team=${selectedTeamNames.firstSelectedTeam},${selectedTeamNames.secondSelectedTeam}`);
                     const data = await response.json();
                     setHeadToHeadMatches(data);
                 }
