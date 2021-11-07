@@ -1,0 +1,53 @@
+.H2HTeamTile {
+  height: 190px;
+  position: relative;
+  // border: 1px solid white;
+  padding: 10px;
+}
+
+.H2Hcheckbox {
+  //background-color: red;
+  display: inline-block;
+  width: 200px;
+  height: 190px;
+  padding-top: 10px;
+}
+
+#checkboxes input[type="checkbox"] {
+  display: none;
+}
+
+#checkboxes input[type="checkbox"]:checked + .H2Hcheckbox {
+  //background-color: green;
+  border: 2px solid red;
+  border-radius: 25px;
+}
+
+.TeamName {
+  position: absolute;
+  font-size: 1em;
+  left: 45%;
+  bottom: 0px;
+  text-align: center;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.H2HteamLogos {
+  display: flex;
+  justify-content: center;
+  height: 100px; /* Can be anything */
+  position: relative;
+}
+img {
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
